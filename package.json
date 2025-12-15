@@ -1,0 +1,39 @@
+{
+  "name": "shadowplay",
+  "version": "0.1.0",
+  "description": "A headless React audio player with LRC synchronization and shadowing support",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/shadowplay.js",
+  "module": "./dist/shadowplay.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/shadowplay.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsup",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.5.0",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4"
+  }
+}
